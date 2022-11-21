@@ -112,7 +112,7 @@ SEXP dtpMatrix_matrix_solve(SEXP a, SEXP b)
 			&one FCONE FCONE);
 #else
     F77_CALL(dtptrs)(ul, "N", di, pbdim, pbdim + 1, px, py, pbdim,
-		     &one FCONE FCONE);
+		     &one FCONE FCONE FCONE);
 #endif
     
     UNPROTECT(7);
