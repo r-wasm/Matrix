@@ -9,9 +9,7 @@
 #endif
 #include <Rconfig.h>
 
-#ifdef PR18534fixed
 # define usePR18534fix
-#endif
 
 #include <R_ext/Lapack.h>
 #ifndef FCONE
